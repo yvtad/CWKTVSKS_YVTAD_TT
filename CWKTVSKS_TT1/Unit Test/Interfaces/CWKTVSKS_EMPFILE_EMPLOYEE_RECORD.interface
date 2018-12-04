@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 19.2.2.v20181030-0703_75?>
+<!--Topaz for Total Test 19.2.2.v20181030-0703_75 Dec 4, 2018 12:28:37 PM-->
+<interface:interface xmlns:interface="http://www.compuware.com/model/xml/interface" xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" alias="" id="Unit%20Test/Interfaces/CWKTVSKS_EMPFILE_EMPLOYEE_RECORD.interface" iotype="Keyed - (KSDS)">
+  <interface:description></interface:description>
+  <interface:argument listructure="../Structures/CWKTVSKS_EMPFILE_EMPLOYEE-RECORD.listructure#Unit%20Test/Structures/CWKTVSKS_EMPFILE_EMPLOYEE-RECORD.listructure">
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/CWKTVSKS_EMPFILE_EMPLOYEE-RECORD.listructure#EMPLOYEE_RECORD">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+        <properties:property name="position">0</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/CWKTVSKS_EMPFILE_EMPLOYEE-RECORD.listructure#EMPLOYEE_RECORD.EMP_REC_KEY">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+        <properties:property name="position">0</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/CWKTVSKS_EMPFILE_EMPLOYEE-RECORD.listructure#EMPLOYEE_RECORD.FILLER0">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+        <properties:property name="position">5</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+  </interface:argument>
+  <interface:key length="5" position="0">
+    <interface:properties>
+      <properties:property name="id" type="string">EMPLOYEE_RECORD.EMP_REC_KEY</properties:property>
+    </interface:properties>
+  </interface:key>
+</interface:interface>
